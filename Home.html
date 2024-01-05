@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE Endterm</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="trapezoid">
+          <a href="Home.html" class="expandHome">HOME</a>
+          <a href="CSS.html" class="expandHome">CSS</a>
+          <a href="SVG.html" class="expandHome">SVG</a>
+          <a href="CANVAS.html" class="expandHome">CANVAS</a>
+          <a href="About.html" class="expandHome">ABOUT</a>
+        </div>
+      </nav>
+      
+      <section id="Home">
+        <h1>HOME</h1>
+
+        <canvas id="Welcome" 
+                width="670" 
+                height="200" 
+                style="display: block; margin: auto;">  
+        </canvas> 
+        <script> 
+            let w = document.getElementById("Welcome"); 
+            let welcome = w.getContext("2d"); 
+            welcome.font = "60px Arial"; 
+            welcome.fillText("Welcome to my Portfolio", 10, 100); 
+        </script> 
+      </section>
+</body>
+</html>

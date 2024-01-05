@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE Endterm</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="trapezoid">
+          <a href="Home.html" class="expandHome">HOME</a>
+          <a href="CSS.html" class="expandHome">CSS</a>
+          <a href="SVG.html" class="expandHome">SVG</a>
+          <a href="CANVAS.html" class="expandHome">CANVAS</a>
+          <a href="About.html" class="expandHome">ABOUT</a>
+        </div>
+      </nav>
+      
+      <section id="Home">
+        <h1>CANVAS</h1>
+
+        <canvas id="name" width="550px" height="300px"> </canvas> 
+          <script> 
+            let text = document.getElementById("name"); 
+            let mat = text.getContext("2d"); 
+            let gradient = mat.createLinearGradient(1, 4, text.width, 2); 
+            gradient.addColorStop("0", "red"); 
+            gradient.addColorStop("0.4", "yellow"); 
+            gradient.addColorStop("1.0", "aqua"); 
+            mat.font = "100px sans-serif"; 
+            mat.fillStyle = "red"; 
+            mat.strokeStyle = gradient; 
+            mat.strokeText("Matthew Ty", 10, 150); 
+          </script> 
+      </section>
+</body>
+</html>
